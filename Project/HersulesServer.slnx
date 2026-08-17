@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Hercules.Api/Hercules.Api.csproj" />
+  <Project Path="Hercules.Application/Hercules.Application.csproj" />
+  <Project Path="Hercules.Domain/Hercules.Domain.csproj" />
+  <Project Path="Hercules.Infrastructure/Hercules.Infrastructure.csproj" />
+  <Project Path="Hercules.Tests/Hercules.Tests.csproj" />
+</Solution>

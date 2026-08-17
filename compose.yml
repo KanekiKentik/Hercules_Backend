@@ -1,0 +1,36 @@
+services:
+  hercules_app:
+    build: .
+    image: hercules:v01
+    container_name: hercules
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://0.0.0.0:5000
+    ports:
+      - 5000:5000
+    networks: 
+      - appnet
+    restart: unless-stopped
+    depends_on: 
+      - psql
+  
+  psql:
+    image: postgres
+    container_name: psql
+    volumes: 
+      - psql:/var/lib/postgresql
+    environment:
+      - POSTGRES_USER=creepak
+      - POSTGRES_DB=hercules
+      - POSTGRES_PASSWORD=7856pass7856
+    networks: 
+      - appnet
+    restart: unless-stopped
+
+volumes:
+  psql:
+
+networks:
+  appnet:
+    name: hercules_net
+    driver: bridge

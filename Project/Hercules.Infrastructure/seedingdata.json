@@ -1,0 +1,117 @@
+{
+    "MuscleGroups": [
+      "Quads",
+      "Calves",
+      "Hamstrings",
+      "Leg Adductors",
+      "Leg Abductors",
+      "Glutes",
+      "Chest",
+      "Abs",
+      "Obliques",
+      "Lats",
+      "Upper Traps",
+      "Lower Traps",
+      "Front Delts",
+      "Mid Delts",
+      "Rear Delts",
+      "Lower Back",
+      "Biceps",
+      "Triceps",
+      "Forearms"
+    ],
+    "Exercises": [
+      {
+        "Name": "Bench Press",
+        "MuscleGroups": ["Chest", "Triceps", "Front Delts"]
+      },
+      {
+        "Name": "Pull Ups",
+        "MuscleGroups": ["Lats", "Biceps", "Front Delts"]
+      },
+      {
+        "Name": "Dumbbell Curls",
+        "MuscleGroups": ["Biceps", "Forearms"]
+      },
+      {
+        "Name": "Barbell Curls",
+        "MuscleGroups": ["Biceps", "Forearms"]
+      },
+      {
+        "Name": "Reverse Barbell Curls",
+        "MuscleGroups": ["Biceps", "Forearms"]
+      },
+      {
+        "Name": "Hammer Curls",
+        "MuscleGroups": ["Biceps", "Forearms"]
+      },
+      {
+        "Name": "Overhear Cable Extensions",
+        "MuscleGroups": ["Triceps"]
+      },
+      {
+        "Name": "Seated Cable Rows",
+        "MuscleGroups": ["Lats", "Lower Traps"]
+      },
+      {
+        "Name": "Hyperextension",
+        "MuscleGroups": ["Lower Back", "Glutes"]
+      },
+      {
+        "Name": "Dumbbell Shrugs",
+        "MuscleGroups": ["Upper Lats", "Forearms"]
+      },
+      {
+        "Name": "Barbell Shrugs",
+        "MuscleGroups": ["Upper Lats", "Forearms"]
+      },
+      {
+        "Name": "Forearm Barbell Curls",
+        "MuscleGroups": ["Forearms"]
+      },
+      {
+        "Name": "Reverse Forearm Barbell Curls",
+        "MuscleGroups": ["Forearms"]
+      },
+      {
+        "Name": "Squats",
+        "MuscleGroups": ["Quads", "Hamstrings"]
+      },
+      {
+        "Name": "Leg Curls",
+        "MuscleGroups": ["Hamstrings"]
+      },
+      {
+        "Name": "Seated Calf Raises",
+        "MuscleGroups": ["Calves"]
+      },
+      {
+        "Name": "Lateral Dumbbell Raises",
+        "MuscleGroups": ["Forearms"]
+      },
+      {
+        "Name": "Lateral Cable Raises",
+        "MuscleGroups": ["Mid Delts"]
+      },
+      {
+        "Name": "Rear Delts Cable Cross",
+        "MuscleGroups": ["Rear Delts"]
+      },
+      {
+        "Name": "Lunges",
+        "MuscleGroups": ["Quads", "Hamstrings", "Glutes"]
+      },
+      {
+        "Name": "Leg Abduction",
+        "MuscleGroups": ["Leg Abductors"]
+      },
+      {
+        "Name": "Leg Adduction",
+        "MuscleGroups": ["Leg Adductors"]
+      },
+      {
+        "Name": "Abs Machine Curls",
+        "MuscleGroups": ["Abs"]
+      }
+    ]
+  }
