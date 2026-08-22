@@ -6,6 +6,7 @@ public class UsernameRequestValidator : AbstractValidator<UsernameRequest>
     {
         RuleFor(u => u.Username)
             .NotEmpty()
+            .NotNull()
             .Must(u => u.Length.IsBetween(UserEntity.MinUsernameLength, UserEntity.MaxUsernameLength))
                 .WithMessage($"Username length must be between {UserEntity.MinUsernameLength} and {UserEntity.MaxUsernameLength}")
             .Matches(UserEntity.UsernameRegex);

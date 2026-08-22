@@ -12,16 +12,6 @@ internal class ExceptionHandlingMiddleware
         {
             await _next.Invoke(context);
         }
-        catch (PostgresException)
-        {
-            //ОШИБКИ САМОЙ БД (НАРУШЕНИЕ ЦЕЛОСТНОСТИ, НАРУШЕНИЙ UNIQUE...)
-            context.Response.StatusCode = StatusCodes.Status500InternalServerError;
-        }
-        catch (NpgsqlException)
-        {
-            //ОШИБКИ С ПОДКЛЮЧЕНИЕМ К БД
-            context.Response.StatusCode = StatusCodes.Status500InternalServerError;
-        }
         catch (DomainException ex)
         {
             context.Response.StatusCode = StatusCodes.Status400BadRequest;

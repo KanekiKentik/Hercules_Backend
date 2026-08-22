@@ -1,4 +1,3 @@
-using System.Security.Claims;
 public sealed class TemplateService : ServiceBase
 {
     private readonly ITemplatesRepository _tRepo;
@@ -59,7 +58,7 @@ public sealed class TemplateService : ServiceBase
         int[] missing = input.Where(id => !real.Contains(id)).ToArray();
 
         return Result.Failure(ErrorType.NotFound, 
-            $"Missing exercise ids: {string.Join(", ", missing)}");
+            $"Cannot find exercises with exercise ids: {string.Join(", ", missing)}");
     }
     private async Task<Result<TemplateEntity>> CheckAccessAndGet(int templateId, int userId, bool isTracking = false)
     {

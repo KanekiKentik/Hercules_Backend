@@ -52,6 +52,7 @@ if (app.Environment.IsDevelopment())
 
 app.Services.MigrateDb();
 app.Services.SeedData(Path.Combine(AppContext.BaseDirectory, "seedingdata.json"));
+
 app.UseExceptionHandling();
 app.UseAuthentication();
 app.UseAuthorization();

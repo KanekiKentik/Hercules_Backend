@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 public sealed class WorkoutService : ServiceBase
 {
     private readonly IWorkoutsRepository _wRepo;

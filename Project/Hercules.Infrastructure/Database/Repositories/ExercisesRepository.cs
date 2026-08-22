@@ -11,7 +11,7 @@ internal class ExercisesRepository : EntityRepository<ExerciseEntity>, IExercise
             querry = querry.Where(e => e.Name.ToLower().Contains(name.ToLower()));
 
         if(muscleGroups is { Length: > 0 }) 
-            querry = querry.Where(e => muscleGroups.All(m => e.Muscles.Select(m => m.Name).Contains(m)));
+            querry = querry.Where(e => muscleGroups.All(m => e.Muscles.Select(m => m.Name.ToLower()).Contains(m.ToLower())));
 
         return await querry.ToArrayAsync();
     }

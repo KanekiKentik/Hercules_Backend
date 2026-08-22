@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -71,6 +72,9 @@ public class UsersController : ControllerBase
     [HttpGet("get-by-username")]
     public async Task<IActionResult> GetByUsername([FromQuery] UsernameRequest request)
     {
+        if (request == null)
+            return BadRequest();
+
         var user = await _uService.Get(request);
         if (user == null) return NotFound();
         
